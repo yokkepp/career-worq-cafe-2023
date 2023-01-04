@@ -1,0 +1,40 @@
+@import "variables";
+@import "top";
+@import "introduce";
+
+body {
+    color: $main-color;
+}
+
+p {
+    font-family: iroha-23kaede-stdn,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1, h2 {
+    font-family: ice-cream-standard, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    width: 100%;
+    text-align: center;
+    color: $main-color;
+    span {
+        color: $accent-color;
+    }
+}
+h3 {
+    color: $main-color;
+    font-size: 20px;
+    top: 60%;
+}
+
+.inner {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section {
+    padding-top: 100px;
+}

@@ -1,0 +1,10 @@
+.introduce {
+    &__message {
+        text-align: center;
+
+        &-strong {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+    }
+}
