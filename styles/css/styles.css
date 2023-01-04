@@ -66,12 +66,15 @@
   flex-direction: column-reverse;
 }
 .menu-item__contents-title h4 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-top: 0px;
 }
 .menu-item__contents-title h5 {
   margin: 0;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+}
+.menu-item__contents-description {
+  font-size: 1.5rem;
 }
 .menu-item {
   display: flex;
@@ -94,6 +97,10 @@
 }
 .menu-item__image img {
   width: 100%;
+}
+
+.event .inner {
+  background-image: url();
 }
 
 body {
