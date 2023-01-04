@@ -1,0 +1,13 @@
+.table {
+    margin-left: auto;
+    margin-right: auto;
+    td {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .category {
+        background-color: $main-color;
+        color: white;
+        border-radius: 10px;
+    }
+}

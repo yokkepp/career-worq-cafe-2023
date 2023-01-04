@@ -1,19 +1,20 @@
 @import "variables";
 @import "top";
 @import "introduce";
+@import "news";
+@import "menu";
+
 
 body {
     color: $main-color;
-}
-
-p {
     font-family: iroha-23kaede-stdn,sans-serif;
     font-weight: 400;
     font-style: normal;
+    line-height: 2rem;
 }
 
 h1, h2 {
-    font-family: ice-cream-standard, sans-serif;
+    font-family: ice-cream-slant, sans-serif;
     font-style: normal;
     font-weight: 400;
     width: 100%;
@@ -23,11 +24,6 @@ h1, h2 {
         color: $accent-color;
     }
 }
-h3 {
-    color: $main-color;
-    font-size: 20px;
-    top: 60%;
-}
 
 .inner {
     max-width: 1200px;
@@ -36,5 +32,17 @@ h3 {
 }
 
 section {
-    padding-top: 100px;
+    padding-top: 150px;
+}
+
+section {
+    h2 {
+        font-size: 3rem;
+    }
+    h3 {
+        font-size: 1rem;
+        text-align: center;
+        margin-top: -30px;
+        margin-bottom: 30px;
+    }
 }
