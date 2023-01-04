@@ -50,6 +50,7 @@
   border-spacing: 40px 20px;
 }
 .news__list__category {
+  width: 90px;
   text-align: center;
   background-color: #503C33;
   color: white;
