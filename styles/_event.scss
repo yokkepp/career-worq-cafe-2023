@@ -1,5 +1,26 @@
 .event {
     .inner {
-        background-image: url();
+        font-family: 'ヒラギノ角ゴシック', 'Arial Narrow', Arial, sans-serif;
+        box-sizing: border-box;
+        border-radius: 20px;
+        text-align: center;
+        background-image: url(/images/bg-events2_min.jpg);
+        padding: 50px;
+        background-size: cover;
+        position: relative;
+        z-index: -1000;
+        height: 100vh;
+        width: 100%;
+        color: white;
+        &::after {
+            content: "";
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -100;
+            background-color: rgba(#000, 0.6);
+        }
     }
 }

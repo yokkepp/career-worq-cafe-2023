@@ -1,11 +1,12 @@
 .menu {
-    background-image: url(/images/bg-wood.png);
-    &-item__contents-title {
+    background-image: url(/images/bg-wood_min.png);
+    &-item__title {
         display: flex;
         flex-direction: column-reverse;
         h4 {
-            font-size: 2.5rem;
+            font-size: 2.2rem;
             margin-top: 0px;
+            line-height: 2.5rem;
         }
         h5 {
             margin: 0;
@@ -19,21 +20,31 @@
         &.pink {
             background-color: rgba($color: #F8C2C2, $alpha: .5);
             margin-bottom: 50px;
+            margin-left: 80px;
+            margin-right: 80px;
         }
         &.green {
             background-color: rgba($color: #C7D3C3, $alpha: .5);
+            margin-left: 80px;
+            margin-right: 80px;
         }
-        display: flex;
         padding: 50px 40px 40px 50px;
         border-radius: 30px;
         &__contents{
-            width: 50%;
+            display: flex;
+            width: 100%;
             padding-right: 50px;
-        }
-        &__image{
-            width: 50%;
-            img {
-                width: 100%;
+            &-description {
+                width: 50%;
+                padding-right: 5%;
+            }
+            &-image{
+                width: 45%;
+                align-items: center;
+                img {
+                    width: 100%;
+                    align-items: center;
+                }
             }
         }
     }

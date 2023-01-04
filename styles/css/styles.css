@@ -1,5 +1,6 @@
+@charset "UTF-8";
 .top {
-  background-image: url(/images/bg-hero.jpeg);
+  background-image: url(/images/bg-hero_min.jpeg);
   background-size: cover;
   position: relative;
   z-index: -1000;
@@ -59,17 +60,18 @@
 }
 
 .menu {
-  background-image: url(/images/bg-wood.png);
+  background-image: url(/images/bg-wood_min.png);
 }
-.menu-item__contents-title {
+.menu-item__title {
   display: flex;
   flex-direction: column-reverse;
 }
-.menu-item__contents-title h4 {
-  font-size: 2.5rem;
+.menu-item__title h4 {
+  font-size: 2.2rem;
   margin-top: 0px;
+  line-height: 2.5rem;
 }
-.menu-item__contents-title h5 {
+.menu-item__title h5 {
   margin: 0;
   font-size: 1.5rem;
 }
@@ -77,30 +79,68 @@
   font-size: 1.5rem;
 }
 .menu-item {
-  display: flex;
   padding: 50px 40px 40px 50px;
   border-radius: 30px;
 }
 .menu-item.pink {
   background-color: rgba(248, 194, 194, 0.5);
   margin-bottom: 50px;
+  margin-left: 80px;
+  margin-right: 80px;
 }
 .menu-item.green {
   background-color: rgba(199, 211, 195, 0.5);
+  margin-left: 80px;
+  margin-right: 80px;
 }
 .menu-item__contents {
-  width: 50%;
+  display: flex;
+  width: 100%;
   padding-right: 50px;
 }
-.menu-item__image {
+.menu-item__contents-description {
   width: 50%;
+  padding-right: 5%;
 }
-.menu-item__image img {
+.menu-item__contents-image {
+  width: 45%;
+  align-items: center;
+}
+.menu-item__contents-image img {
   width: 100%;
+  align-items: center;
 }
 
 .event .inner {
-  background-image: url();
+  font-family: "ヒラギノ角ゴシック", "Arial Narrow", Arial, sans-serif;
+  box-sizing: border-box;
+  border-radius: 20px;
+  text-align: center;
+  background-image: url(/images/bg-events2_min.jpg);
+  padding: 50px;
+  background-size: cover;
+  position: relative;
+  z-index: -1000;
+  height: 100vh;
+  width: 100%;
+  color: white;
+}
+.event .inner::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -100;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.access .office-image {
+  width: 300px;
+}
+.access .office-image img {
+  width: 100%;
 }
 
 body {
