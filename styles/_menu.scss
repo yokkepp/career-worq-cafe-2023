@@ -1,9 +1,37 @@
 .menu {
     background-image: url(/images/bg-wood.png);
-
-    .menu-item {
-        background-color: rgba($color: #F8C2C2, $alpha: .5);
-        padding: 30px;
+    &-item__contents-title {
+        display: flex;
+        flex-direction: column-reverse;
+        h4 {
+            font-size: 2rem;
+            margin-top: 0px;
+        }
+        h5 {
+            margin: 0;
+            font-size: 1.2rem;
+        }
+    }
+    &-item {
+        &.pink {
+            background-color: rgba($color: #F8C2C2, $alpha: .5);
+            margin-bottom: 50px;
+        }
+        &.green {
+            background-color: rgba($color: #C7D3C3, $alpha: .5);
+        }
+        display: flex;
+        padding: 50px 40px 40px 50px;
         border-radius: 30px;
+        &__contents{
+            width: 50%;
+            padding-right: 50px;
+        }
+        &__image{
+            width: 50%;
+            img {
+                width: 100%;
+            }
+        }
     }
 }

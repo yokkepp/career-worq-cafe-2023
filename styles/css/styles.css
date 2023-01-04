@@ -61,10 +61,39 @@
 .menu {
   background-image: url(/images/bg-wood.png);
 }
-.menu .menu-item {
-  background-color: rgba(248, 194, 194, 0.5);
-  padding: 30px;
+.menu-item__contents-title {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.menu-item__contents-title h4 {
+  font-size: 2rem;
+  margin-top: 0px;
+}
+.menu-item__contents-title h5 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+.menu-item {
+  display: flex;
+  padding: 50px 40px 40px 50px;
   border-radius: 30px;
+}
+.menu-item.pink {
+  background-color: rgba(248, 194, 194, 0.5);
+  margin-bottom: 50px;
+}
+.menu-item.green {
+  background-color: rgba(199, 211, 195, 0.5);
+}
+.menu-item__contents {
+  width: 50%;
+  padding-right: 50px;
+}
+.menu-item__image {
+  width: 50%;
+}
+.menu-item__image img {
+  width: 100%;
 }
 
 body {
