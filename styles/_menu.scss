@@ -1,0 +1,9 @@
+.menu {
+    background-image: url(/images/bg-wood.png);
+
+    .menu-item {
+        background-color: rgba($color: #F8C2C2, $alpha: .5);
+        padding: 30px;
+        border-radius: 30px;
+    }
+}

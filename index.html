@@ -45,46 +45,51 @@
         </div>
     </section>
     <section class="news">
-        <h2>News</h2>
-        <h3>お知らせ</h3>
-        <table class="table">
-            <tr>
-                <td class="date">2023.1.1</td>
-                <td class="category">news</td>
-                <td class="description">サイトをリニューアルしました！</td>
-            </tr>
-            <tr>
-                <td class="date">2023.1.1</td>
-                <td class="category">news</td>
-                <td class="description">サイトをリニューアルしました！</td>
-            </tr>
-        </table>
+        <div class="inner">
+            <h2>News</h2>
+            <h3>お知らせ</h3>
+            <table class="news__list-group">
+                <tr class="news__list">
+                    <td class="news__list__date">2023.1.1</td>
+                    <td class="news__list__category">news</td>
+                    <td class="news__list__description">サイトをリニューアルしました！</td>
+                </tr>
+                <tr class="news__list">
+                    <td class="news__list__date">2023.2.10</td>
+                    <td class="news__list__category">イベント</td>
+                    <td class="news__list__description">第1回 ジョブワークアウトを開催します。</td>
+                </tr>
+            </table>
+        </div>
     </section>
     <section class="menu">
-        <h2>Menu</h2>
-        <h3>"career worQ"で出来ること</h3>
-        <article class="menu-item">
-            <div class="menu-item__contents">
-                <div class="menu__title">
-                    <h4>career worQ カフェ浅草橋</h4>
-                    <h5>リアルコミュニティスペース</h5>
+        <div class="inner">
+            <h2>Menu</h2>
+            <h3>"career worQ"で出来ること</h3>
+            <article class="menu-item">
+                <div class="menu-item__contents">
+                    <div class="menu__title">
+                        <h4>career worQ カフェ浅草橋</h4>
+                        <h5>リアルコミュニティスペース</h5>
+                    </div>
+                    <div class="menu-item__discription">
+                        <p>
+                            就活生同士で仲間を作れたり、企業と出会えるイベントを開催したりしているリアルコミュニティスペースです。
+                        </p>
+                        <p>
+                            大学生は無料で使うことができます。
+                        </p>
+                    </div>
                 </div>
-                <div class="menu-item__discription">
-                    <p>
-                        就活生同士で仲間を作れたり、企業と出会えるイベントを開催したりしているリアルコミュニティスペースです。
-                    </p>
-                    <p>
-                        大学生は無料で使うことができます。
-                    </p>
+                <div class="menu-item__image">
+                    <img src="/images/coffee-cup-asakusabashi.png" alt="career worQ カフェ浅草橋">
                 </div>
-            </div>
-            <div class="menu-item__image">
-                <img src="/images/coffee-cup-asakusabashi.png" alt="">
-            </div>
+        </div>
         </article>
     </section>
     <section class="events"></section>
     <section class="access"></section>
     <footer></footer>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
 </body>
 </html>
