@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Questionをシェアしよう! ~career worQ cafe~</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles/css/normalize.css">
     <link rel="stylesheet" href="/styles/css/styles.css">
     <script>
@@ -16,7 +17,7 @@
           },
           h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
         })(document);
-      </script>
+    </script>
 </head>
 <body>
     <div id="top" class="top">
@@ -26,7 +27,7 @@
         <h1 class="top__main-title">career wor<span class="brown">Q</span> cafe</h1>
         <h4 class="top__sub-title">~みんなの「Q」でつながるコミュニティ~</h4>
     </div>
-    <section class="introduce">
+    <section id="introduce" class="introduce">
         <div class="introduce__message">
             <p class="introduce__message-strong">Questionをシェアしよう。</p>
             <p>これから働く大学生や、先輩社会人、企業の採用担当、経営者...<br>
@@ -43,7 +44,7 @@
             </p>
         </div>
     </section>
-    <section class="news">
+    <section id="news" class="news">
         <div class="inner">
             <h2>News</h2>
             <h3>お知らせ</h3>
@@ -66,7 +67,7 @@
             </table>
         </div>
     </section>
-    <section class="menu">
+    <section id="menu" class="menu">
         <div class="inner">
             <h2>Menu</h2>
             <h3>career worQで出来ること</h3>
@@ -110,40 +111,41 @@
             </article>
         </div>
     </section>
-    <section class="event">
+    <section id="event" class="event">
         <div class="inner">
-            <p class="event__head">イベント告知</p>
-            <h4 class="event__sub-title">ジョブワークアウト第一弾</h4>
-            <p class="">新卒採用解禁直前!!</p>
-            <h2 class="event__main-title">最終準備フェア</h2>
-            <p>
-                今回はcareer worQの就活イベントを「渋谷ヒカリエ」で開催します。
-            </p>
-            <p>
-                トップセミナーや企業の採用責任者との座談会を通じて、就活の最終準備をしましょう！
-            </p>
-            <p>
-                たった一日で就活の準備ができちゃうイベントですので、ぜひご参加ください！
-            </p>
-            <table>
-                <tr>
-                    <th>日時</th>
-                    <td>2023 年 2 月 10 日(金)　13:00〜17:00</td>
-                </tr>
-                <tr>
-                    <th>場所</th>
-                    <td>渋谷ヒカリエ32F</td>
-                </tr>
-                <tr>
-                    <th>人数</th>
-                    <td>
-                        <p>30名</p>
-                        <p>※感染症対策の観点から参加人数に制限を設けております。参加ご希望の方はお早めにご予約ください。</p>
-                    </td>
-                </tr>
-            </table>
-            <a href="">予約はこちらから</a>
-            
+            <div class="event__board">
+                <p class="event__board__head">イベント告知</p>
+                <h4 class="event__board__sub-title">ジョブワークアウト第一弾</h4>
+                <div class="event__board__title">
+                    <p class="event__board__title-head">新卒採用解禁直前!!</p>
+                    <h2 class="event__board__title-main">最終準備フェア</h2>
+                </div>
+                <div class="event__board__description">
+                    <p>
+                        今回はcareer worQの就活イベントを「渋谷ヒカリエ」で開催します。<br>
+                        トップセミナーや企業の採用責任者との座談会を通じて、就活の最終準備をしましょう！<br>
+                        たった一日で就活の準備ができちゃうイベントですので、ぜひご参加ください！
+                    </p>
+                </div>
+                <table class="event__board__table">
+                    <tr>
+                        <th>日時</th>
+                        <td>2023 年 2 月 10 日(金)　13:00〜17:00</td>
+                    </tr>
+                    <tr>
+                        <th>場所</th>
+                        <td>渋谷ヒカリエ32F</td>
+                    </tr>
+                    <tr>
+                        <th>人数</th>
+                        <td>
+                            <p>30名</p>
+                            <p class="anotation">※感染症対策の観点から参加人数に制限を設けております。<br>参加ご希望の方はお早めにご予約ください。</p>
+                        </td>
+                    </tr>
+                </table>
+                <button>予約はこちらから</button>
+            </div>
         </div>
     </section>
     <section class="access">

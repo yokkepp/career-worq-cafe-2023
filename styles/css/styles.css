@@ -1,6 +1,5 @@
-@charset "UTF-8";
 .top {
-  background-image: url(/images/bg-hero_min.jpeg);
+  background-image: url(/images/bg-hero.jpeg);
   background-size: cover;
   position: relative;
   z-index: -1000;
@@ -111,29 +110,113 @@
   align-items: center;
 }
 
-.event .inner {
-  font-family: "ヒラギノ角ゴシック", "Arial Narrow", Arial, sans-serif;
+.event__board {
+  font-family: "Noto Sans JP", sans-serif;
   box-sizing: border-box;
-  border-radius: 20px;
+  margin-left: 80px;
+  margin-right: 80px;
+  border-radius: 30px;
   text-align: center;
   background-image: url(/images/bg-events2_min.jpg);
   padding: 50px;
   background-size: cover;
   position: relative;
-  z-index: -1000;
-  height: 100vh;
-  width: 100%;
+  z-index: 0;
   color: white;
 }
-.event .inner::after {
+.event__board::after {
   content: "";
   height: 100%;
   width: 100%;
+  border-radius: 30px;
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -100;
+  z-index: -1;
   background-color: rgba(0, 0, 0, 0.6);
+}
+.event__board__head {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 100px;
+}
+.event__board__sub-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 100px;
+}
+.event__board__title-head {
+  font-size: 1.8rem;
+  margin-bottom: -25px;
+}
+.event__board__title-main {
+  font-size: 4rem;
+  font-weight: 700;
+  color: white;
+  position: relative;
+  margin-bottom: 100px;
+}
+.event__board__title-main::before {
+  content: "";
+  height: 140px;
+  border-left: solid 2px white;
+  transform: rotate(-25deg);
+  position: absolute;
+  left: 120px;
+  top: -70px;
+}
+.event__board__title-main::after {
+  content: "";
+  height: 140px;
+  border-left: solid 2px white;
+  transform: rotate(25deg);
+  position: absolute;
+  right: 120px;
+  top: -70px;
+}
+.event__board__description {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.event__board__description p {
+  text-align: left;
+}
+.event__board__table {
+  border: solid 0.5px white;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+.event__board__table th {
+  border: solid 0.5px white;
+  padding: 30px;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+.event__board__table td {
+  border: solid 0.5px white;
+  padding: 30px;
+  text-align: left;
+  font-size: 1.2rem;
+}
+.event__board__table td .anotation {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+button {
+  margin-top: 50px;
+  width: 250px;
+  height: 70px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: ease 0.3s;
+}
+button:hover {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
 }
 
 .access .office-image {
