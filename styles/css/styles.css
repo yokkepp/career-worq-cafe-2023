@@ -18,7 +18,7 @@
 }
 .top .fukidashi {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(20%, -90%);
 }
@@ -259,11 +259,15 @@ button:hover {
 }
 
 .access .office {
-  width: 100%;
+  margin: 0 80px;
   display: flex;
   margin-bottom: 30px;
+  border: solid 1px rgb(200, 200, 200);
+  border-radius: 20px;
 }
 .access .office-image {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
   width: 60%;
   height: 400px;
   overflow: hidden;
@@ -279,6 +283,7 @@ button:hover {
 .access .office-info .name {
   margin-top: 0;
   font-size: 2rem;
+  line-height: 1.3;
 }
 .access .office-info button {
   position: absolute;
@@ -296,8 +301,47 @@ button:hover {
   color: #503C33;
 }
 
+.footer {
+  background-image: url(/images/bg-footer_min.jpeg);
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+}
+.footer::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.footer__contents {
+  margin-left: 50%;
+  padding: 30px;
+  color: white;
+  width: 50%;
+}
+.footer__contents__sub-title {
+  margin-top: 50px;
+  font-size: 1.5rem;
+}
+.footer__contents__main-title {
+  font-size: 2.5rem;
+  color: white;
+  text-align: left;
+  margin-bottom: 15px;
+}
+.footer .copylight {
+  text-align: center;
+  color: white;
+  padding: 40px;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
 * {
-  outline: 2px solid blue;
   box-sizing: border-box;
   line-height: 1;
 }
