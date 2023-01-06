@@ -39,7 +39,7 @@
         &__title {
             &-head {
                 font-size: 1.8rem;
-                margin-bottom: -25px;
+                margin-bottom: 5px;
             }
             &-main {
                 font-size: 4rem;
@@ -75,6 +75,7 @@
             margin-right: auto;
             p {
                 text-align: left;
+                line-height: 1.5;
             }
         }
         
@@ -99,6 +100,7 @@
                 .anotation {
                     font-size: 1rem;
                     font-weight: 300;
+                    line-height: 1.5;
                 }
             }
         }

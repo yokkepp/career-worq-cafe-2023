@@ -30,14 +30,19 @@
         }
         padding: 50px 40px 40px 50px;
         border-radius: 30px;
+
         &__contents{
             display: flex;
+            justify-content: space-between;
             width: 100%;
-            padding-right: 50px;
+
             &-description {
                 width: 50%;
-                padding-right: 5%;
+                p{
+                    margin-top: 0;
+                }
             }
+
             &-image{
                 width: 45%;
                 align-items: center;

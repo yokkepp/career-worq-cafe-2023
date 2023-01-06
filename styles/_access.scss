@@ -1,8 +1,42 @@
 .access {
-    .office-image {
-        width: 300px;
-        img {
-            width: 100%;
+    .office {
+        width: 100%;
+        display: flex;
+        margin-bottom: 30px;
+
+        &-image {
+            width: 60%;
+            height: 400px;
+            overflow: hidden;
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &-info {
+            padding: 30px;
+            position: relative;
+            .name {
+                margin-top: 0;
+                font-size: 2rem;
+            }
+            button {
+                position: absolute;
+                bottom: 30px;
+                left: 30px;
+                width: 150px;
+                height: 50px;
+                border: solid $main-color 2px;
+                background-color: $main-color;
+                color: white;
+                &:hover {
+                    cursor: pointer;
+                    background-color: transparent;
+                    color: $main-color;
+
+                }
+            }
         }
     }
 }

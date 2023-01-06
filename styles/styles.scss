@@ -7,6 +7,12 @@
 @import "access";
 
 
+* {
+    outline: 2px solid blue;
+    box-sizing: border-box;
+    line-height: 1;
+}
+
 body {
     color: $main-color;
     font-family: iroha-23kaede-stdn,sans-serif;
@@ -19,6 +25,7 @@ h1, h2 {
     font-family: ice-cream-slant, sans-serif;
     font-style: normal;
     font-weight: 400;
+    margin-top: 0;
     width: 100%;
     text-align: center;
     color: $main-color;
@@ -31,7 +38,7 @@ h1, h2 {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    
+
 }
 
 section {

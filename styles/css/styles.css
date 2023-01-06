@@ -36,8 +36,44 @@
   transform: translate(-50%, 255%);
 }
 
+.introduce {
+  overflow: hidden;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.introduce p {
+  line-height: 2;
+}
 .introduce__message {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
+  position: relative;
+}
+.introduce__message::before {
+  content: "";
+  width: 300px;
+  height: 610px;
+  background-image: url(/images/introduce-left-side_min.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -210px;
+  top: -90px;
+  z-index: -1;
+}
+.introduce__message::after {
+  content: "";
+  width: 300px;
+  height: 610px;
+  background-image: url(/images/introduce-right-side_min.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: -210px;
+  top: -50px;
+  z-index: -1;
 }
 .introduce__message-strong {
   font-size: 2rem;
@@ -54,7 +90,6 @@
   text-align: center;
   background-color: #503C33;
   color: white;
-  padding: 0 20px;
   border-radius: 5px;
 }
 
@@ -94,12 +129,14 @@
 }
 .menu-item__contents {
   display: flex;
+  justify-content: space-between;
   width: 100%;
-  padding-right: 50px;
 }
 .menu-item__contents-description {
   width: 50%;
-  padding-right: 5%;
+}
+.menu-item__contents-description p {
+  margin-top: 0;
 }
 .menu-item__contents-image {
   width: 45%;
@@ -147,7 +184,7 @@
 }
 .event__board__title-head {
   font-size: 1.8rem;
-  margin-bottom: -25px;
+  margin-bottom: 5px;
 }
 .event__board__title-main {
   font-size: 4rem;
@@ -181,6 +218,7 @@
 }
 .event__board__description p {
   text-align: left;
+  line-height: 1.5;
 }
 .event__board__table {
   border: solid 0.5px white;
@@ -203,6 +241,7 @@
 .event__board__table td .anotation {
   font-size: 1rem;
   font-weight: 300;
+  line-height: 1.5;
 }
 
 button {
@@ -219,11 +258,48 @@ button:hover {
   color: white;
 }
 
+.access .office {
+  width: 100%;
+  display: flex;
+  margin-bottom: 30px;
+}
 .access .office-image {
-  width: 300px;
+  width: 60%;
+  height: 400px;
+  overflow: hidden;
 }
 .access .office-image img {
   width: 100%;
+  object-fit: cover;
+}
+.access .office-info {
+  padding: 30px;
+  position: relative;
+}
+.access .office-info .name {
+  margin-top: 0;
+  font-size: 2rem;
+}
+.access .office-info button {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  width: 150px;
+  height: 50px;
+  border: solid #503C33 2px;
+  background-color: #503C33;
+  color: white;
+}
+.access .office-info button:hover {
+  cursor: pointer;
+  background-color: transparent;
+  color: #503C33;
+}
+
+* {
+  outline: 2px solid blue;
+  box-sizing: border-box;
+  line-height: 1;
 }
 
 body {
@@ -238,6 +314,7 @@ h1, h2 {
   font-family: ice-cream-slant, sans-serif;
   font-style: normal;
   font-weight: 400;
+  margin-top: 0;
   width: 100%;
   text-align: center;
   color: #503C33;
