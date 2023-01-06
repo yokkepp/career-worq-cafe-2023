@@ -1,0 +1,79 @@
+.menu {
+    &-item {
+        &__title {
+            h4 {
+                font-size: 1.8rem
+            }
+            h5 {
+                font-size: 1.2rem
+            }
+        }
+        &__contents-description {
+            font-size: 1rem;
+        }
+    }
+}
+
+.event__board {
+    &__head {
+        font-size: 2rem;
+        margin-bottom: 80px;
+    }
+    &__sub-title {
+        font-size: 2rem;
+        margin-bottom: 60px;
+    }
+    &__title {
+        &-head {
+            font-size: 1.5rem;
+        }
+        &-main {
+            font-size: 3rem;
+            margin-bottom: 60px;
+            &::before {
+                height: 100px;
+                left: 25px;
+                top: -40px;
+            }
+            &::after {
+                height: 100px;
+                right: 25px;
+                top: -40px;
+            }
+        }
+    }
+    &__description {
+        width: 100%;
+    }
+    &__table {
+        th, td{
+            padding: 20px;
+        }
+    }
+}
+
+.access {
+    .office {
+        flex-direction: column;
+        &-image {
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 0;
+            width: 100%;
+        }
+        &-info {
+            width: 100%;
+            .station {
+                margin-bottom: 80px;
+            }
+        }
+    }
+}
+
+.footer__contents {
+    &__sub-title {
+        font-size: 1rem;
+    }
+    &__main-title {
+        font-size: 1.5rem;
+    }
+}

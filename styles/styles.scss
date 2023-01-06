@@ -7,8 +7,19 @@
 @import "access";
 @import "footer";
 
+//タブレット用
+@media screen and (max-width: 1023px) {
+    @import "tablet-styles";
+    
+}
+
+// モバイル用
+@media screen and (max-width: 767px){
+    @import "mobile-styles";
+}
 
 * {
+    outline: solid 2px blue;
     box-sizing: border-box;
     line-height: 1;
 }

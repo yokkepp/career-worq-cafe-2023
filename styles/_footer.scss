@@ -29,6 +29,14 @@
             text-align: left;
             margin-bottom: 15px;
         }
+        &__ml {
+            width: 100%;
+            img {
+                max-width: 300px;
+                width: 100%;
+                object-fit: contain;
+            }
+        }
     }
 
     .copylight {

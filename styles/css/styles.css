@@ -33,6 +33,8 @@
 }
 .top__sub-title {
   font-size: 20px;
+  width: 100%;
+  text-align: center;
   transform: translate(-50%, 255%);
 }
 
@@ -231,6 +233,7 @@
   padding: 30px;
   font-weight: 400;
   font-size: 1.2rem;
+  white-space: nowrap;
 }
 .event__board__table td {
   border: solid 0.5px white;
@@ -273,16 +276,18 @@ button:hover {
   overflow: hidden;
 }
 .access .office-image img {
-  width: 100%;
   object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 .access .office-info {
   padding: 30px;
   position: relative;
+  width: 40%;
 }
 .access .office-info .name {
   margin-top: 0;
-  font-size: 2rem;
+  font-size: 1.7rem;
   line-height: 1.3;
 }
 .access .office-info button {
@@ -333,6 +338,14 @@ button:hover {
   text-align: left;
   margin-bottom: 15px;
 }
+.footer__contents__ml {
+  width: 100%;
+}
+.footer__contents__ml img {
+  max-width: 300px;
+  width: 100%;
+  object-fit: contain;
+}
 .footer .copylight {
   text-align: center;
   color: white;
@@ -341,7 +354,70 @@ button:hover {
   margin-bottom: 0;
 }
 
+@media screen and (max-width: 1023px) {
+  .menu-item__title h4 {
+    font-size: 1.8rem;
+  }
+  .menu-item__title h5 {
+    font-size: 1.2rem;
+  }
+  .menu-item__contents-description {
+    font-size: 1rem;
+  }
+  .event__board__head {
+    font-size: 2rem;
+    margin-bottom: 80px;
+  }
+  .event__board__sub-title {
+    font-size: 2rem;
+    margin-bottom: 60px;
+  }
+  .event__board__title-head {
+    font-size: 1.5rem;
+  }
+  .event__board__title-main {
+    font-size: 3rem;
+    margin-bottom: 60px;
+  }
+  .event__board__title-main::before {
+    height: 100px;
+    left: 25px;
+    top: -40px;
+  }
+  .event__board__title-main::after {
+    height: 100px;
+    right: 25px;
+    top: -40px;
+  }
+  .event__board__description {
+    width: 100%;
+  }
+  .event__board__table th, .event__board__table td {
+    padding: 20px;
+  }
+  .access .office {
+    flex-direction: column;
+  }
+  .access .office-image {
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0;
+    width: 100%;
+  }
+  .access .office-info {
+    width: 100%;
+  }
+  .access .office-info .station {
+    margin-bottom: 80px;
+  }
+  .footer__contents__sub-title {
+    font-size: 1rem;
+  }
+  .footer__contents__main-title {
+    font-size: 1.5rem;
+  }
+}
 * {
+  outline: solid 2px blue;
   box-sizing: border-box;
   line-height: 1;
 }
