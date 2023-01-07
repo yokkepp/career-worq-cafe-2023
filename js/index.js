@@ -6,6 +6,12 @@ const fadeOption = {
   threshold: [0],
 };
 
+// const slideOption = {
+//   root: null,
+//   rootMargin: "-20% 0px",
+//   threshold: [0],
+// };
+
 const targets = (entries, observer) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -16,6 +22,8 @@ const targets = (entries, observer) => {
 };
 
 const fadeObserver = new IntersectionObserver(targets, fadeOption);
+
+// const slideObserver = new IntersectionObserver(targets, slideOption);
 
 fadeTargets.forEach((target) => {
   fadeObserver.observe(target);
