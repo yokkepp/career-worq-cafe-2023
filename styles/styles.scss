@@ -1,4 +1,5 @@
 @import "variables";
+@import "common";
 @import "top";
 @import "introduce";
 @import "news";
@@ -6,6 +7,7 @@
 @import "event";
 @import "access";
 @import "footer";
+
 
 //タブレット用
 @media screen and (max-width: 1023px) {
@@ -16,52 +18,4 @@
 // モバイル用
 @media screen and (max-width: 767px){
     @import "mobile-styles";
-}
-
-* {
-    outline: solid 2px blue;
-    box-sizing: border-box;
-    line-height: 1;
-}
-
-body {
-    color: $main-color;
-    font-family: iroha-23kaede-stdn,sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 2rem;
-}
-
-h1, h2 {
-    font-family: ice-cream-slant, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    margin-top: 0;
-    width: 100%;
-    text-align: center;
-    color: $main-color;
-    span {
-        color: $accent-color;
-    }
-}
-
-.inner {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-
-}
-
-section {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    h2 {
-        font-size: 3rem;
-    }
-    h3 {
-        font-size: 1rem;
-        text-align: center;
-        margin-top: -30px;
-        margin-bottom: 30px;
-    }
 }
