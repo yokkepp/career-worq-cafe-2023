@@ -5,7 +5,8 @@
   justify-content: center;
   width: 100%;
   height: 100%;
-  background: #fff;
+  background-color: #503C33;
+  z-index: 1000;
 }
 
 .loader {
@@ -715,6 +716,9 @@ button:hover {
     margin-right: auto;
   }
   .footer__contents__sub-title, .footer__contents__main-title {
+    text-align: center;
+  }
+  .footer__contents__ml {
     text-align: center;
   }
   .footer .copylight {
