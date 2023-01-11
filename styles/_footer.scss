@@ -37,6 +37,18 @@
                 object-fit: contain;
             }
         }
+        &__insta {
+            margin-top: 30px;
+            width: 10%;
+            color: white;
+            img {
+                max-width: 50px;
+                min-width: 40px;
+                width: 100%;
+                object-fit: contain;
+                color: white;
+            }
+        }
     }
 
     .copylight {

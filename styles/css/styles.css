@@ -406,6 +406,7 @@ button {
   width: 250px;
   height: 70px;
   border-radius: 10px;
+  text-decoration: none;
   cursor: pointer;
   transition: ease 0.3s;
 }
@@ -499,6 +500,18 @@ button:hover {
   max-width: 300px;
   width: 100%;
   object-fit: contain;
+}
+.footer__contents__insta {
+  margin-top: 30px;
+  width: 10%;
+  color: white;
+}
+.footer__contents__insta img {
+  max-width: 50px;
+  min-width: 40px;
+  width: 100%;
+  object-fit: contain;
+  color: white;
 }
 .footer .copylight {
   text-align: center;
@@ -723,6 +736,10 @@ button:hover {
   }
   .footer__contents__ml {
     text-align: center;
+  }
+  .footer__contents__insta {
+    margin-left: auto;
+    margin-right: auto;
   }
   .footer .copylight {
     font-size: 0.6rem;
