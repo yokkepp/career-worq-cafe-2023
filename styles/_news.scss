@@ -28,5 +28,8 @@
     }
     &__list__description {
         margin-left: 30px;
+        & a {
+            text-decoration: underline;
+        }
     }
 }

@@ -246,6 +246,9 @@ section h3 {
 .news__list__description {
   margin-left: 30px;
 }
+.news__list__description a {
+  text-decoration: underline;
+}
 
 .menu {
   background-image: url(/images/bg-wood_min.png);
