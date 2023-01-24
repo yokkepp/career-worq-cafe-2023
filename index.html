@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Questionをシェアしよう! ~career worQ cafe~</title>
-    <!-- <link rel="stylesheet" href="https://use.typekit.net/wex4zzp.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles/css/normalize.css">
     <link rel="stylesheet" href="/styles/css/styles.css">
     <script>
@@ -17,74 +17,199 @@
           },
           h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
         })(document);
-      </script>
+    </script>
 </head>
 <body>
+    <div class="loader-wrap">
+        <div class="loader">Loading...</div>
+    </div>
     <div id="top" class="top">
         <div class="fukidashi">
-            <img class="" src="/images/fukidashi2.png" alt="Questionをシェアしよう">
+            <img class="" src="/images/fukidashi2_min.png" alt="Questionをシェアしよう">
         </div>
         <h1 class="top__main-title">career wor<span class="brown">Q</span> cafe</h1>
         <h4 class="top__sub-title">~みんなの「Q」でつながるコミュニティ~</h4>
     </div>
-    <section class="introduce">
+    <section id="introduce" class="introduce">
         <div class="introduce__message">
-            <p class="introduce__message-strong">Questionをシェアしよう。</p>
-            <p>これから働く大学生や、先輩社会人、企業の採用担当、経営者...<br>
-                実は、みんな悩んで、考えて、Questionを抱えています。</p>
+            <p class="introduce__message-strong"><span>Question を</span><span>シェアしよう。</span></p>
+            <p>
+                <span>これから働く大学生や、先輩社会人、</span>
+                <span>企業の採用担当、経営者...</span>
+                <span>実は、みんな悩んで、考えて、</span>
+                <span>Questionを抱えています。</span>
+            </p>
             <p>それをみんなで共有できたら。</p>
-            <p>仲間がいるって、ほっとできたり<br>自分の気持ちを発見できたり<br>新しいことを思いついたり。
+            <p>
+                <span>仲間がいるって、ほっとできたり</span>
+                <span>新しいことを思いついたり。</span>
             </p>
             <p>「はたらくって、なんだろう？」</p>
                 
             <p>
-                疑問から生まれてくるのは、たくさんの気づき。
+                <span>疑問から生まれてくるのは、</span>
+                <span>たくさんの気づき。</span>
             </p>
-                さあ、あなたのQuestionもシェアしよう。
+            <p>
+                <span>さあ、あなたのQuestionも</span>
+                <span>シェアしよう。</span>
             </p>
         </div>
     </section>
-    <section class="news">
-        <h2>News</h2>
-        <h3>お知らせ</h3>
-        <table class="table">
-            <tr>
-                <td class="date">2023.1.1</td>
-                <td class="category">news</td>
-                <td class="description">サイトをリニューアルしました！</td>
-            </tr>
-            <tr>
-                <td class="date">2023.1.1</td>
-                <td class="category">news</td>
-                <td class="description">サイトをリニューアルしました！</td>
-            </tr>
-        </table>
+    <section id="news" class="news">
+        <div class="inner">
+            <h2 class="fadeIn">News</h2>
+            <h3 class="fadeIn">お知らせ</h3>
+            <ul class="news__list-group fadeIn">
+                <li class="news__list">
+                    <p class="item list-item news__list__date">2023.1.1</p>
+                    <p class="item list-item news__list__category">news</p>
+                    <p class="item list-item news__list__description">サイトをリニューアルしました！</p>
+                </li>
+                <li class="news__list">
+                    <p class="item list-item news__list__date">2023.1.10</p>
+                    <p class="item list-item news__list__category">イベント</p>
+                    <p class="item list-item news__list__description">第一回 ジョブワークアウト予約開始しました！</p>
+                </li>
+                <li class="news__list">
+                    <p class="item list-item news__list__date">2023.2.10</p>
+                    <p class="item list-item news__list__category">イベント</p>
+                    <p class="item list-item news__list__description">第一回 ジョブワークアウト開催します。</p>
+                </li>
+            </ul>
+        </div>
     </section>
-    <section class="menu">
-        <h2>Menu</h2>
-        <h3>"career worQ"で出来ること</h3>
-        <article class="menu-item">
-            <div class="menu-item__contents">
-                <div class="menu__title">
+    <section id="menu" class="menu">
+        <div class="inner">
+            <h2 class="fadeIn">Menu</h2>
+            <h3 class="fadeIn">career worQで出来ること</h3>
+            <article class="menu-item pink fadeIn">
+                <div class="menu-item__title">
                     <h4>career worQ カフェ浅草橋</h4>
                     <h5>リアルコミュニティスペース</h5>
                 </div>
-                <div class="menu-item__discription">
+                <div class="menu-item__contents">
+                    <div class="menu-item__contents-description">
+                        <p>
+                            就活生同士で仲間を作れたり、企業と出会えるイベントを開催したりしているリアルコミュニティスペースです。
+                        </p>
+                        <p>
+                            大学生は無料で使うことができます。
+                        </p>
+                    </div>
+                    <div class="menu-item__contents-image">
+                        <img src="/images/coffee-cup-asakusabashi-v2_min.png" alt="career worQ カフェ浅草橋">
+                    </div>
+                </div>
+            </article>
+            <article class="menu-item green fadeIn">
+                <div class="menu-item__title">
+                    <h4>ジョブワークアウト</h4>
+                    <h5>イベント</h5>
+                </div>
+                <div class="menu-item__contents">
+                    <div class="menu-item__contents-description">
+                        <p>
+                            就活生と積極的に採用を行っている企業が出会えるリアルイベントです。
+                        </p>
+                        <p>
+                            第一弾は【最終準備フェア】。予約は下記から！
+                        </p>
+                    </div>
+                    <div class="menu-item__contents-image">
+                        <img src="/images/coffee-cup-asakusabashi-v2_min.png" alt="career worQ カフェ浅草橋">
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+    <section id="event" class="event">
+        <div class="inner">
+            <div class="event__board fadeIn">
+                <p class="event__board__head">イベント告知</p>
+                <h4 class="event__board__sub-title"><span>ジョブワークアウト</span><span>第一弾</span></h4>
+                <div class="event__board__title">
+                    <p class="event__board__title-head">新卒採用解禁直前!!</p>
+                    <h2 class="event__board__title-main">最終準備フェア</h2>
+                </div>
+                <div class="event__board__description">
                     <p>
-                        就活生同士で仲間を作れたり、企業と出会えるイベントを開催したりしているリアルコミュニティスペースです。
-                    </p>
-                    <p>
-                        大学生は無料で使うことができます。
+                        今回はcareer worQの就活イベントを「渋谷ヒカリエ」で開催します。<br>
+                        トップセミナーや企業の採用責任者との座談会を通じて、就活の最終準備をしましょう！<br>
+                        たった一日で就活の準備ができちゃうイベントですので、ぜひご参加ください！
                     </p>
                 </div>
+                <table class="event__board__table">
+                    <tr>
+                        <th>日時</th>
+                        <td>2023 年 2 月 10 日(金)　13:00〜17:00</td>
+                    </tr>
+                    <tr>
+                        <th>場所</th>
+                        <td>渋谷ヒカリエ32F</td>
+                    </tr>
+                    <tr>
+                        <th>人数</th>
+                        <td>
+                            <p>30名</p>
+                            <p class="annotation">※感染症対策の観点から参加人数に制限を設けております。<br>参加ご希望の方はお早めにご予約ください。</p>
+                        </td>
+                    </tr>
+                </table>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeQD_RWGTYpYupYol1XVHs4NPCMGQOim8JwENbrao1RZDMDyw/viewform?usp=sf_link" target="_blank" rel="noopener">
+                    <button>予約はこちらから</button>
+                </a>
             </div>
-            <div class="menu-item__image">
-                <img src="/images/coffee-cup-asakusabashi.png" alt="">
-            </div>
-        </article>
+        </div>
     </section>
-    <section class="events"></section>
-    <section class="access"></section>
-    <footer></footer>
+    <section class="access">
+        <div class="inner">
+
+            <h2 class="fadeIn">Access</h2>
+            <h3 class="fadeIn">アクセス</h3>
+            <article class="office fadeIn">
+                <div class="office-image">
+                    <img src="/images/office-asakusabashi_min.jpg" alt="career worQカフェ 浅草橋">
+                </div>
+                <div class="office-info">
+                    <p class="name">キャリアワークカフェ<br>浅草橋</p>
+                    <p class="address">東京都台東区浅草橋1-26-1
+                        イズ. 浅草橋ビル1F</p>
+                    <p class="station">JR浅草橋駅 西口 徒歩1分</p>
+                    <a href="https://goo.gl/maps/TaPA5hncD7XKzXNu6" target="_blank" rel="noopener">
+                        <button>Google Map</button>
+                    </a>
+                </div>
+            </article>
+            <article class="office fadeIn">
+                <div class="office-image">
+                    <img src="/images/office-shibuya2_min.jpg" alt="career worQカフェ 浅草橋">
+                </div>
+                <div class="office-info">
+                    <p class="name">キャリアワークカフェ
+                        <br>渋谷</p>
+                    <p class="address">東京都渋谷区渋谷2-15-1 渋谷クロスタワー25F</p>
+                    <p class="station">渋谷駅 徒歩6分</p>
+                    <a href="https://goo.gl/maps/SpgSqiJGPdLtw6DEA" target="_blank" rel="noopener">
+                        <button>Google Map</button>
+                    </a>
+                </div>
+            </article>
+        </div><!-- inner end -->
+    </section>
+    <footer class="footer">
+        <div class="footer__contents">
+            <p class="footer__contents__sub-title">Questionをシェアしよう。</p>
+            <h1 class="footer__contents__main-title">career worQ cafe</h1>
+            <div class="footer__contents__ml">
+                <img src="/images/ml.png" alt="">
+            </div>
+        </div>
+        <p class="copylight">&copy;STAR CAREER Corp. All Rights Reserved.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous">
+    </script>
+    <script src="/js/loader.js"></script>
+    <script src="/js/index.js"></script>
 </body>
 </html>

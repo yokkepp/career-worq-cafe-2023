@@ -1,0 +1,51 @@
+.access {
+    .office {
+        margin: 0 80px;
+        display: flex;
+        margin-bottom: 30px;
+        border: solid 1px rgb(200, 200, 200);
+        border-radius: 20px;
+
+        &-image {
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            width: 60%;
+            height: 400px;
+            overflow: hidden;
+
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        &-info {
+            padding: 30px;
+            position: relative;
+
+            width: 40%;
+            .name {
+                margin-top: 0;
+                font-size: 1.7rem;
+                line-height: 1.3;
+            }
+            button {
+                position: absolute;
+                bottom: 30px;
+                left: 30px;
+                width: 150px;
+                height: 50px;
+                border: solid $main-color 2px;
+                background-color: $main-color;
+                color: white;
+                &:hover {
+                    cursor: pointer;
+                    background-color: transparent;
+                    color: $main-color;
+
+                }
+            }
+        }
+    }
+}
