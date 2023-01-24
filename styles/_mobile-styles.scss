@@ -182,8 +182,17 @@ section {
             text-align: center;
         }
 
+        &__ml {
+            text-align: center;
+        }
+
+        &__insta {
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
     .copylight {
         font-size: 0.6rem;
     }
 }
+

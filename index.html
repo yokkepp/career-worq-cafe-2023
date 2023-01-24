@@ -1,10 +1,29 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7JVTG02JDL"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-7JVTG02JDL');
+    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Questionをシェアしよう! ~career worQ cafe~</title>
+    <!-- opg -->
+    <head prefix="og: https://ogp.me/ns#"></head>
+    <meta property="og:url" content="https://careerworq-cafe.com/"/>
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Questionをシェアしよう! ~career worQ cafe~" />
+    <meta property="og:description" content="キャリアワークカフェは、仲間が見つかるコミュニティです。就活イベントやグループディスカッションを通して、あなたも仲間とつながろう。" />
+    <meta property="og:site_name" content="キャリアワークカフェ" />
+    <meta property="og:image" content="/images/ogp_career-worQ-cafe.png" />
+    <!-- opg end -->
+    <meta name="description" content="キャリアワークカフェは、仲間が見つかるコミュニティです。就活イベントやグループディスカッションを通して、あなたも仲間とつながろう。">
+    <title>career worQ cafe | 就活CafeでQuestionをシェアしよう。</title>
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles/css/normalize.css">
     <link rel="stylesheet" href="/styles/css/styles.css">
@@ -22,7 +41,7 @@
 <body>
     <div class="loader-wrap">
         <div class="loader">Loading...</div>
-    </div>
+    </div><!-- loader-wrap end -->
     <div id="top" class="top">
         <div class="fukidashi">
             <img class="" src="/images/fukidashi2_min.png" alt="Questionをシェアしよう">
@@ -35,7 +54,7 @@
             <p class="introduce__message-strong"><span>Question を</span><span>シェアしよう。</span></p>
             <p>
                 <span>これから働く大学生や、先輩社会人、</span>
-                <span>企業の採用担当、経営者...</span>
+                <span>企業の採用担当、経営者...</span><br>
                 <span>実は、みんな悩んで、考えて、</span>
                 <span>Questionを抱えています。</span>
             </p>
@@ -72,6 +91,11 @@
                     <p class="item list-item news__list__description">第一回 ジョブワークアウト予約開始しました！</p>
                 </li>
                 <li class="news__list">
+                    <p class="item list-item news__list__date">2023.1.19</p>
+                    <p class="item list-item news__list__category">お知らせ</p>
+                    <p class="item list-item news__list__description"><a href="https://reashu.com/shukatsu-freespace/#career_worQ_cafe">【内定者が選んだ】就活カフェおすすめ15選</a>に選ばれました！</p>
+                </li>
+                <li class="news__list">
                     <p class="item list-item news__list__date">2023.2.10</p>
                     <p class="item list-item news__list__category">イベント</p>
                     <p class="item list-item news__list__description">第一回 ジョブワークアウト開催します。</p>
@@ -82,7 +106,7 @@
     <section id="menu" class="menu">
         <div class="inner">
             <h2 class="fadeIn">Menu</h2>
-            <h3 class="fadeIn">career worQで出来ること</h3>
+            <h3 class="fadeIn">career worQでできること</h3>
             <article class="menu-item pink fadeIn">
                 <div class="menu-item__title">
                     <h4>career worQ カフェ浅草橋</h4>
@@ -98,7 +122,7 @@
                         </p>
                     </div>
                     <div class="menu-item__contents-image">
-                        <img src="/images/coffee-cup-asakusabashi-v2_min.png" alt="career worQ カフェ浅草橋">
+                        <img src="/images/coffee-cup-asakusabashi-v3.png" alt="career worQ カフェ浅草橋">
                     </div>
                 </div>
             </article>
@@ -117,7 +141,7 @@
                         </p>
                     </div>
                     <div class="menu-item__contents-image">
-                        <img src="/images/coffee-cup-asakusabashi-v2_min.png" alt="career worQ カフェ浅草橋">
+                        <img src="/images/coffee-cup-event-v2.png" alt="career worQ カフェ浅草橋">
                     </div>
                 </div>
             </article>
@@ -168,7 +192,7 @@
             <h2 class="fadeIn">Access</h2>
             <h3 class="fadeIn">アクセス</h3>
             <article class="office fadeIn">
-                <div class="office-image">
+                <div class="office-image cwc-a">
                     <img src="/images/office-asakusabashi_min.jpg" alt="career worQカフェ 浅草橋">
                 </div>
                 <div class="office-info">
@@ -182,8 +206,8 @@
                 </div>
             </article>
             <article class="office fadeIn">
-                <div class="office-image">
-                    <img src="/images/office-shibuya2_min.jpg" alt="career worQカフェ 浅草橋">
+                <div class="office-image cwc-s">
+                    <img src="/images/office-shibuya2_min.jpg" alt="career worQカフェ 渋谷">
                 </div>
                 <div class="office-info">
                     <p class="name">キャリアワークカフェ
@@ -204,12 +228,18 @@
             <div class="footer__contents__ml">
                 <img src="/images/ml.png" alt="">
             </div>
+            <div class="footer__contents__insta">
+                <a href="https://www.instagram.com/careerworq/">
+                    <img src="/images/instagram.svg" alt="instagram">
+                </a>
+            </div>
         </div>
         <p class="copylight">&copy;STAR CAREER Corp. All Rights Reserved.</p>
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous">
     </script>
-    <script src="/js/loader.js"></script>
+
     <script src="/js/index.js"></script>
+    <script src="/js/loader.js"></script>
 </body>
 </html>

@@ -5,7 +5,8 @@
   justify-content: center;
   width: 100%;
   height: 100%;
-  background: #fff;
+  background-color: #503C33;
+  z-index: 1000;
 }
 
 .loader {
@@ -78,6 +79,7 @@
 * {
   box-sizing: border-box;
   line-height: 1;
+  text-decoration: none;
 }
 
 body {
@@ -244,6 +246,9 @@ section h3 {
 .news__list__description {
   margin-left: 30px;
 }
+.news__list__description a {
+  text-decoration: underline;
+}
 
 .menu {
   background-image: url(/images/bg-wood_min.png);
@@ -289,6 +294,7 @@ section h3 {
 }
 .menu-item__contents-description p {
   margin-top: 0;
+  line-height: 1.4;
 }
 .menu-item__contents-image {
   width: 45%;
@@ -307,6 +313,7 @@ section h3 {
   border-radius: 30px;
   text-align: center;
   background-image: url(/images/bg-events2_min.jpg);
+  background-position: 62%;
   padding: 50px;
   background-size: cover;
   position: relative;
@@ -339,6 +346,7 @@ section h3 {
   margin-bottom: 5px;
 }
 .event__board__title-main {
+  font-family: "Noto Sans JP";
   font-size: 4rem;
   font-weight: 700;
   color: white;
@@ -402,6 +410,7 @@ button {
   width: 250px;
   height: 70px;
   border-radius: 10px;
+  text-decoration: none;
   cursor: pointer;
   transition: ease 0.3s;
 }
@@ -424,6 +433,21 @@ button:hover {
   width: 60%;
   height: 400px;
   overflow: hidden;
+  position: relative;
+}
+.access .office-image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.access .office-image.cwc-a::after {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.access .office-image.cwc-s::after {
+  background-color: rgba(255, 255, 255, 0.4);
 }
 .access .office-image img {
   object-fit: cover;
@@ -495,6 +519,18 @@ button:hover {
   max-width: 300px;
   width: 100%;
   object-fit: contain;
+}
+.footer__contents__insta {
+  margin-top: 30px;
+  width: 10%;
+  color: white;
+}
+.footer__contents__insta img {
+  max-width: 50px;
+  min-width: 40px;
+  width: 100%;
+  object-fit: contain;
+  color: white;
 }
 .footer .copylight {
   text-align: center;
@@ -716,6 +752,13 @@ button:hover {
   }
   .footer__contents__sub-title, .footer__contents__main-title {
     text-align: center;
+  }
+  .footer__contents__ml {
+    text-align: center;
+  }
+  .footer__contents__insta {
+    margin-left: auto;
+    margin-right: auto;
   }
   .footer .copylight {
     font-size: 0.6rem;
